@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Red Hat Display', sans-serif;
+        color: hsl(224, 23%, 55%);
+    }
+
+    body{
+        background-color: hsl(224, 23%, 91%);
+    }
+    .background {
+      background: url(./images/pattern-background-desktop.svg) no-repeat center/cover;
+      height: 60vh;
+      width: 100vw;
+      position: fixed;
+      z-index: -1;
+    }
+     
+    .container {
+      text-align: center;
+      background: white;;
+      width: 450px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      border-radius: 15px;
+      overflow: auto;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translatey(50%);
+      line-height: 1.5rem;
+    }
+
+    .svg{
+    width: 450px;
+    }
+    h2{
+      font-weight: 900;
+      margin: 15px;
+      color: black;
+      padding-top: 15px;
+    }
+
+    h3, p{
+      color: black;
+      text-align: left;
+    }
+    
+    p{
+      margin: 0 40px;
+    }
+    
+    .plan{
+        display: inline-block;
+        background:hsl(225, 100%, 98%);
+        margin: 15px auto;
+        border-radius: 10px;
+        width: 75%;
+        padding: 15px;
+        vertical-align: middle;
+        
+    }
+    .payment{
+      text-decoration: none;
+      color: white;
+      background: hsl(245, 75%, 52%);
+      border-radius: 10px;
+      font-size: 1rem;
+      display: block;
+      margin: 0 auto;
+      padding-top: 10px;
+      width: 75%;
+      height: 3rem;
+  }
+
+    .change{
+      display: inline;
+      color: blue;
+      font-weight: 700;
+      vertical-align: middle;
+      float: right;
+
+    }
+
+    .icon{
+      display: block;
+      float: left;
+      padding-right: 15px;
+    }
+   
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+   
+    
+    @media(max-width: 375px){
+      .container{
+        transform: translateY(-0%);
+        width: 100vw;
+        /* height: 100vh; */
+        overflow:auto;
+      }
+    }
